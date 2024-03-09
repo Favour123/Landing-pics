@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
 box-sizing: border-box;
+scroll-behavior: smooth;
 }
 #nav{
   display: none;
@@ -287,9 +288,11 @@ padding: 30px 30px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
  opacity: 0.4;
 }
-.social-media{
+#social-media{
   margin-top: 60px;
  padding-bottom: 30px;
+ transition: 0.5s ease-in-out;
+
 }
 .social-media1{
   margin-top: 30px;
