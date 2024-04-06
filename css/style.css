@@ -4,6 +4,15 @@
 box-sizing: border-box;
 scroll-behavior: smooth;
 }
+.nopes{
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  height: 797vh;
+  width: 96.1vw;
+  background-color: rgba(53, 123, 184, 0.6);
+}
 #nav{
   display: none;
   position: relative;

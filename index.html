@@ -13,11 +13,13 @@
 </style>
 <body>
   <main>
+    <div class="nopes"></div>
     <section class="head">
          <!-- nav -->
       <nav >
         <h3>sunnyside</h3>
-        <ul id="yes">
+        <ul id="yes" >
+          <!-- <span class="nopes"></span> -->
           <li><a href="http://">Abouts</a></li>
           <li><a href="http://">Service</a></li>
           <li><a href="http://">Projects</a></li>
@@ -154,16 +156,21 @@
 
   </main>
   <script>
+    let nopes = document.querySelector(".nopes");
     let yes = document.getElementById("yes");
     let nav1=document.getElementById("nav1");
     let nav= document.getElementById("nav");
     nav.addEventListener("click",() =>{
 
       yes.style.right = "0";
+      yes.style.zIndex = "10000";
+      nopes.style.display ="block";
     });
     nav1.addEventListener("click",() =>{
        
       yes.style.right = "-200px";
+      nopes.style.display ="none";
+      yes.style.zIndex = "10000";
 
      });
   </script>
